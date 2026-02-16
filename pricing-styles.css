@@ -591,9 +591,9 @@
         font-size: 2.2vw;
     }
     
-    /* Packages tetap 2 kolom */
+    /* Packages jadi 1 kolom di mobile */
     .packages-grid {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
@@ -613,9 +613,9 @@
         font-size: 2vw;
     }
     
-    /* Pricing table tetap 2 kolom */
+    /* Pricing table jadi 1 kolom di mobile */
     .pricing-table {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
@@ -631,9 +631,9 @@
         font-size: 4vw;
     }
     
-    /* Services grid tetap 2 kolom */
+    /* Services grid jadi 1 kolom di mobile */
     .services-grid-pricing {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
@@ -660,9 +660,9 @@
         font-size: 3vw;
     }
     
-    /* Packages tetap 2 kolom di mobile kecil */
+    /* Packages jadi 1 kolom di mobile kecil */
     .packages-grid {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
@@ -682,9 +682,9 @@
         font-size: 2.5vw;
     }
     
-    /* Pricing table tetap 2 kolom */
+    /* Pricing table jadi 1 kolom di mobile kecil */
     .pricing-table {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     

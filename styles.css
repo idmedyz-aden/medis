@@ -634,15 +634,15 @@ img {
         gap: 4%;
     }
     
-    /* Classes grid tetap 2 kolom */
+    /* Classes grid jadi 1 kolom di mobile */
     .classes-grid {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
-    /* Testimonials tetap 2 kolom */
+    /* Testimonials jadi 1 kolom di mobile */
     .testimonials-grid {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
@@ -734,9 +734,15 @@ img {
         font-size: 3vw;
     }
     
-    /* Classes tetap 2 kolom */
+    /* Classes jadi 1 kolom di mobile kecil */
     .classes-grid {
-        grid-template-columns: repeat(2, 48%);
+        grid-template-columns: 1fr;
+        gap: 4%;
+    }
+    
+    /* Testimonials jadi 1 kolom di mobile kecil */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
         gap: 4%;
     }
     
