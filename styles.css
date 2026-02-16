@@ -737,7 +737,14 @@ body {
     
     .hero-buttons {
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px 20px;
+        font-size: 14px;
+        white-space: nowrap;
     }
     
     .services-grid {
@@ -781,6 +788,15 @@ body {
     
     .hero-text h1 {
         font-size: 28px;
+    }
+    
+    .hero-buttons {
+        gap: 8px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 16px;
+        font-size: 13px;
     }
     
     .quick-services, .news-section {
