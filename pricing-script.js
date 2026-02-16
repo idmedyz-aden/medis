@@ -187,6 +187,8 @@ function updatePrice(selector, price) {
         setTimeout(() => {
             element.textContent = formatPrice(price);
             element.style.opacity = '1'; // Show price with full opacity
+            element.style.color = '#333'; // Change to dark color (not gray)
+            element.style.fontStyle = 'normal'; // Remove italic
         }, 100);
         
         // Remove animation class after animation completes

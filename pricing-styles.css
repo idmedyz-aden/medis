@@ -642,11 +642,21 @@
     transition: all 0.3s ease;
 }
 
+/* Price before region selection - gray and italic */
 .price-amount[style*="opacity: 0.5"],
 .pricing-amount[style*="opacity: 0.5"],
 .service-price[style*="opacity: 0.5"] {
     color: #ccc !important;
     font-style: italic;
+}
+
+/* Price after region selection - bold and dark */
+.price-amount[style*="opacity: 1"],
+.pricing-amount[style*="opacity: 1"],
+.service-price[style*="opacity: 1"] {
+    color: #333 !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
 }
 
 /* Price update animation */
