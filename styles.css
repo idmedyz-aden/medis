@@ -1166,25 +1166,31 @@ body {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: #25d366;
-    border-radius: 50%;
+    background: transparent; /* No background */
+    border-radius: 0; /* No rounded background */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3);
+    box-shadow: none; /* No shadow */
     z-index: 1000;
     transition: all 0.3s;
     text-decoration: none;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    transform: scale(1.15);
+    box-shadow: none; /* No shadow on hover */
 }
 
 .whatsapp-float i {
-    color: white;
-    font-size: 24px;
+    color: #25d366; /* WhatsApp green color */
+    font-size: 48px; /* Larger icon since no background */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); /* Subtle shadow for visibility */
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover i {
+    filter: drop-shadow(0 4px 8px rgba(37, 211, 102, 0.4));
 }
 
 /* Booking Calendar Modal */
