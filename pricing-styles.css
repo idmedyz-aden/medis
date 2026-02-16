@@ -577,148 +577,60 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    /* Gunakan ratio % untuk mempertahankan layout */
     .region-options {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: 1fr;
     }
     
-    .region-card h3 {
-        font-size: 3vw;
-    }
-    
-    .region-card p {
-        font-size: 2.2vw;
-    }
-    
-    /* Packages jadi 1 kolom di mobile */
     .packages-grid {
         grid-template-columns: 1fr;
-        gap: 4%;
     }
     
-    .package-card {
-        padding: 5%;
+    .package-card.popular {
+        transform: scale(1);
     }
     
-    .package-card h3 {
-        font-size: 3vw;
-    }
-    
-    .price-amount {
-        font-size: 4vw;
-    }
-    
-    .feature-item {
-        font-size: 2vw;
-    }
-    
-    /* Pricing table jadi 1 kolom di mobile */
     .pricing-table {
         grid-template-columns: 1fr;
-        gap: 4%;
     }
     
-    .pricing-card {
-        padding: 5%;
+    .pricing-card.recommended {
+        transform: scale(1);
     }
     
-    .pricing-card h3 {
-        font-size: 3vw;
-    }
-    
-    .pricing-amount {
-        font-size: 4vw;
-    }
-    
-    /* Services grid jadi 1 kolom di mobile */
     .services-grid-pricing {
         grid-template-columns: 1fr;
-        gap: 4%;
     }
     
     .pricing-tabs {
-        gap: 2%;
+        flex-direction: column;
     }
     
     .tab-btn {
-        padding: 2% 4%;
-        font-size: 2.5vw;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .region-modal-content {
-        padding: 6% 4%;
-    }
-    
-    .region-card h3 {
-        font-size: 4vw;
-    }
-    
-    .region-card p {
-        font-size: 3vw;
-    }
-    
-    /* Packages jadi 1 kolom di mobile kecil */
-    .packages-grid {
-        grid-template-columns: 1fr;
-        gap: 4%;
+        padding: 30px 20px;
     }
     
     .package-card {
-        padding: 5%;
-    }
-    
-    .package-card h3 {
-        font-size: 3.5vw;
+        padding: 30px 20px;
     }
     
     .price-amount {
-        font-size: 5vw;
-    }
-    
-    .feature-item {
-        font-size: 2.5vw;
-    }
-    
-    /* Pricing table jadi 1 kolom di mobile kecil */
-    .pricing-table {
-        grid-template-columns: 1fr;
-        gap: 4%;
-    }
-    
-    .pricing-card {
-        padding: 5%;
-    }
-    
-    .pricing-card h3 {
-        font-size: 4vw;
+        font-size: 28px;
     }
     
     .pricing-amount {
-        font-size: 5vw;
-    }
-    
-    .pricing-duration {
-        font-size: 2.5vw;
-    }
-    
-    .pricing-features li {
-        font-size: 2.5vw;
+        font-size: 24px;
     }
     
     .service-item-pricing {
-        gap: 2%;
-    }
-    
-    .service-item-pricing span {
-        font-size: 2.5vw;
-    }
-    
-    .tab-btn {
-        padding: 3% 5%;
-        font-size: 3vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 }
 

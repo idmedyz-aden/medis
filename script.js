@@ -12,92 +12,79 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu toggle
-const createMobileMenu = () => {
-    const nav = document.querySelector('.main-nav');
-    const navMenu = document.querySelector('.nav-menu');
+// Mobile menu toggle - Updated version
+const initMobileMenu = () => {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    const navLinks = document.querySelectorAll('.nav-link');
     
-    // Create hamburger button
-    const hamburger = document.createElement('button');
-    hamburger.className = 'hamburger';
-    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-    hamburger.style.cssText = `
-        display: none;
-        background: none;
-        border: none;
-        font-size: 24px;
-        color: #ff6b9d;
-        cursor: pointer;
-        padding: 10px;
-    `;
-    
-    // Insert hamburger before nav menu
-    navMenu.parentNode.insertBefore(hamburger, navMenu);
+    if (!hamburgerBtn || !navMenu || !mobileOverlay) return;
     
     // Toggle mobile menu
-    hamburger.addEventListener('click', () => {
+    const toggleMenu = () => {
+        hamburgerBtn.classList.toggle('active');
         navMenu.classList.toggle('mobile-active');
-        const icon = hamburger.querySelector('i');
-        icon.className = navMenu.classList.contains('mobile-active') 
-            ? 'fas fa-times' 
-            : 'fas fa-bars';
+        mobileOverlay.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('mobile-active') ? 'hidden' : '';
+    };
+    
+    // Close mobile menu
+    const closeMenu = () => {
+        hamburgerBtn.classList.remove('active');
+        navMenu.classList.remove('mobile-active');
+        mobileOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        // Close all dropdowns
+        document.querySelectorAll('.dropdown').forEach(dropdown => {
+            dropdown.classList.remove('active');
+        });
+    };
+    
+    // Hamburger button click
+    hamburgerBtn.addEventListener('click', toggleMenu);
+    
+    // Overlay click
+    mobileOverlay.addEventListener('click', closeMenu);
+    
+    // Dropdown toggle in mobile
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const dropdown = toggle.parentElement;
+                dropdown.classList.toggle('active');
+            }
+        });
     });
     
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!nav.contains(e.target)) {
-            navMenu.classList.remove('mobile-active');
-            hamburger.querySelector('i').className = 'fas fa-bars';
+    // Close menu when clicking nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                closeMenu();
+            }
+        });
+    });
+    
+    // Close menu on window resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
         }
     });
 };
 
-// Add mobile menu styles
+// Remove old mobile menu functions
+const createMobileMenu = () => {
+    // Deprecated - using initMobileMenu instead
+};
+
 const addMobileStyles = () => {
-    const style = document.createElement('style');
-    style.textContent = `
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block !important;
-            }
-            
-            .nav-menu {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.3s ease;
-                z-index: 1000;
-            }
-            
-            .nav-menu.mobile-active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
-            }
-            
-            .nav-menu li {
-                margin: 0;
-                border-bottom: 1px solid #f0f0f0;
-            }
-            
-            .nav-menu a {
-                padding: 15px 20px;
-                display: block;
-            }
-            
-            .dropdown-menu {
-                position: static;
-                opacity: 1;
-                visibility: visible;
-                transform: none;
-                box-shadow: none;
+    // Deprecated - styles now in CSS file
+};
                 background: #f8f9fa;
                 margin-left: 20px;
             }
@@ -312,8 +299,7 @@ const addSearchFunctionality = () => {
 
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    createMobileMenu();
-    addMobileStyles();
+    initMobileMenu(); // New mobile menu function
     animateCounters();
     addParallaxEffect();
     addLoadingAnimation();

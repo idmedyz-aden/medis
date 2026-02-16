@@ -10,24 +10,12 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fefefe;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-html {
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    width: 100%;
-}
-
-/* Ensure images are responsive */
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Header Styles */
@@ -160,6 +148,29 @@ img {
     color: #ff6b9d;
 }
 
+/* Hamburger Menu Button - Hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #ff6b9d;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Overlay - Hidden by default */
+.mobile-overlay {
+    display: none;
+}
 .auth-buttons {
     display: flex;
     gap: 10px;
@@ -573,185 +584,219 @@ img {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Gunakan ratio % untuk mempertahankan layout desktop */
-    .container {
-        padding: 0 5%;
-        max-width: 100%;
+    /* Hide top bar (hotline & social media) on mobile */
+    .top-bar {
+        display: none;
+    }
+    
+    /* Mobile header styling */
+    .main-nav {
+        padding: 10px 0;
     }
     
     .nav-content {
-        gap: 3%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
     }
     
+    /* Logo styling for mobile */
+    .logo {
+        flex: 0 0 auto;
+        z-index: 1001;
+    }
+    
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+    
+    /* Hamburger menu button */
+    .hamburger {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1001;
+    }
+    
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background: #ff6b9d;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Hamburger animation when active */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Mobile menu (sidebar) */
     .nav-menu {
-        gap: 2%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 80px 0 20px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        z-index: 1000;
     }
     
-    /* Hero tetap 2 kolom dengan ratio */
+    .nav-menu.mobile-active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        border-bottom: 1px solid #f0f0f0;
+        width: 100%;
+    }
+    
+    .nav-menu > li > a {
+        padding: 15px 25px;
+        display: block;
+        width: 100%;
+    }
+    
+    /* Dropdown menu in mobile */
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8f9fa;
+        border-radius: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .dropdown.active .dropdown-menu {
+        max-height: 500px;
+    }
+    
+    .dropdown-menu a {
+        padding: 12px 25px 12px 45px;
+        font-size: 14px;
+    }
+    
+    /* Mobile overlay */
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    
+    .mobile-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Hide auth buttons on mobile */
+    .auth-buttons {
+        display: none !important;
+    }
+    
+    /* Other responsive adjustments */
     .hero-content {
-        grid-template-columns: 55% 45%;
-        gap: 3%;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
     
     .hero-text h1 {
-        font-size: 5vw; /* Responsive font size */
-    }
-    
-    .hero-text p {
-        font-size: 2.2vw;
+        font-size: 36px;
     }
     
     .hero-buttons {
-        gap: 2%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
-    .btn-primary, .btn-secondary {
-        padding: 2% 4%;
-        font-size: 2vw;
-    }
-    
-    /* Services grid tetap 2 kolom */
     .services-grid {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: 1fr;
     }
     
-    .service-card {
-        padding: 5%;
-    }
-    
-    .service-card h3 {
-        font-size: 2.5vw;
-    }
-    
-    .service-card p {
-        font-size: 2vw;
-    }
-    
-    /* Stats tetap 2 kolom */
     .stats-grid {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: repeat(2, 1fr);
     }
     
-    /* Classes grid jadi 1 kolom di mobile */
-    .classes-grid {
-        grid-template-columns: 1fr;
-        gap: 4%;
-    }
-    
-    /* Testimonials jadi 1 kolom di mobile */
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 4%;
-    }
-    
-    /* News grid tetap 2 kolom */
     .news-grid {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: 1fr;
     }
     
     .footer-content {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
     
     .section-header {
-        gap: 3%;
-    }
-    
-    h2 {
-        font-size: 4vw;
-    }
-    
-    h3 {
-        font-size: 3vw;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
-    /* Untuk layar sangat kecil, tetap gunakan ratio tapi lebih besar */
     .container {
-        padding: 0 4%;
+        padding: 0 15px;
     }
     
     .hero {
-        padding: 8% 0;
-    }
-    
-    .hero-content {
-        grid-template-columns: 100%; /* Stack di mobile kecil */
-        gap: 5%;
+        padding: 40px 0;
     }
     
     .hero-text h1 {
-        font-size: 7vw;
-    }
-    
-    .hero-text p {
-        font-size: 3.5vw;
-    }
-    
-    .btn-primary, .btn-secondary {
-        padding: 3% 6%;
-        font-size: 3.5vw;
+        font-size: 28px;
     }
     
     .quick-services, .news-section {
-        padding: 10% 0;
+        padding: 40px 0;
     }
     
     .service-card {
-        padding: 6%;
+        padding: 30px 20px;
     }
     
-    /* Services tetap 2 kolom di mobile kecil */
-    .services-grid {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
-    }
-    
-    .service-card h3 {
-        font-size: 3.5vw;
-    }
-    
-    .service-card p {
-        font-size: 3vw;
-    }
-    
-    /* Stats jadi 2 kolom */
     .stats-grid {
-        grid-template-columns: repeat(2, 48%);
-        gap: 4%;
+        grid-template-columns: 1fr;
     }
     
     .stat-number {
-        font-size: 8vw;
-    }
-    
-    .stat-label {
-        font-size: 3vw;
-    }
-    
-    /* Classes jadi 1 kolom di mobile kecil */
-    .classes-grid {
-        grid-template-columns: 1fr;
-        gap: 4%;
-    }
-    
-    /* Testimonials jadi 1 kolom di mobile kecil */
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 4%;
-    }
-    
-    h2 {
-        font-size: 6vw;
-    }
-    
-    h3 {
-        font-size: 4.5vw;
+        font-size: 36px;
     }
 }
 /* Hero Features */
@@ -1041,75 +1086,60 @@ img {
 /* Enhanced Mobile Responsiveness */
 @media (max-width: 768px) {
     .hero-features {
-        gap: 3%;
-    }
-    
-    .hero-stats {
-        top: 3%;
-        right: 3%;
-        gap: 2%;
-    }
-    
-    .stat-bubble {
-        padding: 3% 4%;
-    }
-    
-    .stat-bubble .stat-number {
-        font-size: 3.5vw;
-    }
-    
-    .stat-bubble .stat-label {
-        font-size: 2vw;
-    }
-    
-    .class-info {
-        gap: 3%;
-    }
-    
-    .class-instructor {
-        gap: 2%;
-    }
-    
-    .info-item {
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-features {
-        gap: 4%;
+        flex-direction: column;
+        gap: 15px;
     }
     
     .hero-stats {
         position: static;
         flex-direction: row;
         justify-content: center;
-        margin-top: 5%;
-        gap: 3%;
+        margin-top: 20px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .classes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .class-info {
+        flex-direction: column;
+    }
+    
+    .class-instructor {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-features {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 10px;
     }
     
     .stat-bubble {
-        padding: 4% 5%;
-    }
-    
-    .stat-bubble .stat-number {
-        font-size: 5vw;
-    }
-    
-    .stat-bubble .stat-label {
-        font-size: 3vw;
+        padding: 10px 15px;
     }
     
     .service-card, .testimonial-card {
-        padding: 5%;
+        padding: 20px;
     }
     
     .class-content {
-        padding: 5%;
-    }
-    
-    .info-item {
-        font-size: 3vw;
+        padding: 20px;
     }
 }
 
@@ -1347,24 +1377,20 @@ img {
 /* Responsive logo sizing */
 @media (max-width: 768px) {
     .logo img {
-        width: 15%;
-        min-width: 100px;
+        width: 100px;
     }
     
     .footer-logo img {
-        width: 12%;
-        min-width: 80px;
+        width: 80px;
     }
 }
 
 @media (max-width: 480px) {
     .logo img {
-        width: 20%;
-        min-width: 80px;
+        width: 80px;
     }
     
     .footer-logo img {
-        width: 18%;
-        min-width: 70px;
+        width: 70px;
     }
 }

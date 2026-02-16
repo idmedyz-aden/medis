@@ -36,38 +36,49 @@
                     <div class="logo">
                         <img src="images/logo.jpg" alt="Mediz.id">
                     </div>
-                    <ul class="nav-menu">
-                        <li><a href="#beranda">Beranda</a></li>
+                    
+                    <!-- Hamburger Menu Button -->
+                    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <!-- Mobile Overlay -->
+                    <div class="mobile-overlay" id="mobileOverlay"></div>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#beranda" class="nav-link">Beranda</a></li>
                         <li class="dropdown">
-                            <a href="#layanan">Layanan <i class="fas fa-chevron-down"></i></a>
+                            <a href="#layanan" class="nav-link dropdown-toggle">Layanan <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#konsultasi-kehamilan">Konsultasi Kehamilan</a></li>
-                                <li><a href="#perawatan-pasca">Perawatan Pasca Melahirkan</a></li>
-                                <li><a href="#pijat-bayi">Pijat Bayi & Ibu</a></li>
-                                <li><a href="#baby-spa">Baby Spa & Treatment</a></li>
-                                <li><a href="#konsultasi-gizi">Konsultasi Gizi</a></li>
+                                <li><a href="#konsultasi-kehamilan" class="nav-link">Konsultasi Kehamilan</a></li>
+                                <li><a href="#perawatan-pasca" class="nav-link">Perawatan Pasca Melahirkan</a></li>
+                                <li><a href="#pijat-bayi" class="nav-link">Pijat Bayi & Ibu</a></li>
+                                <li><a href="#baby-spa" class="nav-link">Baby Spa & Treatment</a></li>
+                                <li><a href="#konsultasi-gizi" class="nav-link">Konsultasi Gizi</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#kelas-privat">Kelas Privat <i class="fas fa-chevron-down"></i></a>
+                            <a href="#kelas-privat" class="nav-link dropdown-toggle">Kelas Privat <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#senam-hamil">Senam Hamil</a></li>
-                                <li><a href="#kelas-menyusui">Kelas Menyusui</a></li>
-                                <li><a href="#kelas-mpasi">Kelas MPASI</a></li>
-                                <li><a href="#prenatal-yoga">Prenatal Yoga</a></li>
+                                <li><a href="#senam-hamil" class="nav-link">Senam Hamil</a></li>
+                                <li><a href="#kelas-menyusui" class="nav-link">Kelas Menyusui</a></li>
+                                <li><a href="#kelas-mpasi" class="nav-link">Kelas MPASI</a></li>
+                                <li><a href="#prenatal-yoga" class="nav-link">Prenatal Yoga</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#informasi">Informasi <i class="fas fa-chevron-down"></i></a>
+                            <a href="#informasi" class="nav-link dropdown-toggle">Informasi <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#blog">Blog & Artikel</a></li>
-                                <li><a href="#tips-parenting">Tips Parenting</a></li>
-                                <li><a href="#panduan-kehamilan">Panduan Kehamilan</a></li>
-                                <li><a href="#webinar">Webinar Series</a></li>
+                                <li><a href="#blog" class="nav-link">Blog & Artikel</a></li>
+                                <li><a href="#tips-parenting" class="nav-link">Tips Parenting</a></li>
+                                <li><a href="#panduan-kehamilan" class="nav-link">Panduan Kehamilan</a></li>
+                                <li><a href="#webinar" class="nav-link">Webinar Series</a></li>
                             </ul>
                         </li>
-                        <li><a href="#tentang">Tentang Kami</a></li>
-                        <li><a href="#kontak">Kontak</a></li>
+                        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="#kontak" class="nav-link">Kontak</a></li>
                     </ul>
                     <div class="auth-buttons" style="display: none;">
                         <a href="#login" class="btn-login">Masuk</a>
