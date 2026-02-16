@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediz.id - Pusat Kesehatan Ibu dan Bayi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="pricing-data.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> Hotline: 0800-1-IBU-BAYI</span>
+                        <span><i class="fas fa-envelope"></i> info@mediz.id</span>
+                        <span><i class="fas fa-clock"></i> 24/7 Emergency</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <img src="images/logo.jpg" alt="Mediz.id">
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li class="dropdown">
+                            <a href="#layanan">Layanan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#konsultasi-kehamilan">Konsultasi Kehamilan</a></li>
+                                <li><a href="#perawatan-pasca">Perawatan Pasca Melahirkan</a></li>
+                                <li><a href="#pijat-bayi">Pijat Bayi & Ibu</a></li>
+                                <li><a href="#baby-spa">Baby Spa & Treatment</a></li>
+                                <li><a href="#konsultasi-gizi">Konsultasi Gizi</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#kelas-privat">Kelas Privat <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#senam-hamil">Senam Hamil</a></li>
+                                <li><a href="#kelas-menyusui">Kelas Menyusui</a></li>
+                                <li><a href="#kelas-mpasi">Kelas MPASI</a></li>
+                                <li><a href="#prenatal-yoga">Prenatal Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#informasi">Informasi <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#blog">Blog & Artikel</a></li>
+                                <li><a href="#tips-parenting">Tips Parenting</a></li>
+                                <li><a href="#panduan-kehamilan">Panduan Kehamilan</a></li>
+                                <li><a href="#webinar">Webinar Series</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#tentang">Tentang Kami</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                    <div class="auth-buttons" style="display: none;">
+                        <a href="#login" class="btn-login">Masuk</a>
+                        <a href="#register" class="btn-register">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Pelayanan Homecare Ibu & Bayi Penuh Cinta</h1>
+                    <p>Lengkap dari kehamilan hingga perawatan bayi, bersama tim ahli terpercaya dan konsultasi gratis untuk rasa aman dan nyaman keluarga Anda.</p>
+                    <div class="hero-buttons">
+                        <a href="#konsultasi" class="btn-primary">Konsultasi Sekarang</a>
+                        <a href="#kelas-privat" class="btn-secondary">Booking Kelas</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-user-md"></i>
+                            <span>Bidan & Dokter Ahli</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Tersertifikasi</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-mother-baby.jpg" alt="Ibu dan Bayi">
+                    <div class="hero-stats">
+                        <div class="stat-bubble">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Ibu Bahagia</span>
+                        </div>
+                        <div class="stat-bubble">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Tahun Pengalaman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Services -->
+    <!-- Quick Services -->
+    <section class="quick-services" id="layanan">
+        <div class="container">
+            <h2>Layanan Unggulan Kami</h2>
+            <div class="services-grid">
+                <div class="service-card" id="konsultasi-kehamilan">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Pendamping Persalinan – Bidan Doula</h3>
+                    <p>Pendampingan penuh online dan offline oleh bidan untuk pengalaman kehamilan persalinan yang lebih tenang, nyaman, dan terarah.</p>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="service-link">Booking Konsultasi</a>
+                </div>
+                <div class="service-card" id="perawatan-pasca">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Perawatan Ibu & Bayi Baru Lahir</h3>
+                    <p>Perawatan komprehensif bagi ibu dan bayi, mendukung pemulihan optimal serta adaptasi awal kehidupan si kecil.</p>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="service-link">Pelajari Lebih</a>
+                </div>
+                <div class="service-card" id="pijat-bayi">
+                    <div class="service-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Pijat Bayi & Ibu</h3>
+                    <p>Sentuhan lembut yang membantu relaksasi, meningkatkan kenyamanan, dan mendukung kesehatan ibu serta tumbuh kembang bayi.</p>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="service-link">Reservasi</a>
+                </div>
+                <div class="service-card" id="baby-spa">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Kelas Parents</h3>
+                    <p>Kelas edukatif untuk membekali orang tua dengan pengetahuan dan kepercayaan diri dalam merawat bayi.</p>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="service-link">Book Treatment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools -->
+    <section class="interactive-tools">
+        <div class="container">
+            <h2>Tools Interaktif</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Kalkulator Kehamilan</h3>
+                    <p>Hitung usia kehamilan dan perkiraan tanggal lahir</p>
+                    <a href="#" class="tool-btn">Hitung Sekarang</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Tracker Perkembangan</h3>
+                    <p>Pantau milestone perkembangan bayi Anda</p>
+                    <a href="#" class="tool-btn">Mulai Tracking</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Reminder System</h3>
+                    <p>Notifikasi jadwal kontrol dan vaksinasi</p>
+                    <a href="#" class="tool-btn">Set Reminder</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat Konsultasi</h3>
+                    <p>Chat langsung dengan bidan dan konselor</p>
+                    <a href="#" class="tool-btn">Mulai Chat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Classes -->
+    <section class="private-classes" id="kelas-privat">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kelas Privat & Grup</h2>
+                <a href="#" class="view-all">Lihat Jadwal Lengkap</a>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card featured" id="senam-hamil">
+                    <div class="class-image">
+                        <img src="images/senbumil.png" alt="Senam Hamil">
+                        <div class="class-badge">Populer</div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Senam Hamil</h3>
+                        <p>Olahraga khusus ibu hamil untuk menjaga kebugaran dan mempersiapkan persalinan</p>
+                        <div class="class-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span>60 menit/sesi</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <span>Max 8 orang</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-tag"></i>
+                                <span>Rp 150.000/sesi</span>
+                            </div>
+                        </div>
+                        <div class="class-instructor">
+                            <img src="images/instruktor1.jpeg" alt="Instruktur">
+                            <div>
+                                <strong>Bdn. Adenia Novenda S.Keb</strong>
+                                <span>Bidan Profesional</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="class-btn">Booking Kelas</a>
+                    </div>
+                </div>
+                <div class="class-card" id="kelas-menyusui">
+                    <div class="class-image">
+                        <img src="images/busui.jpg" alt="Kelas Menyusui">
+                    </div>
+                    <div class="class-content">
+                        <h3>Kelas Menyusui</h3>
+                        <p>Panduan lengkap teknik menyusui yang benar</p>
+                        <div class="class-price">Rp 200.000</div>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="class-btn">Daftar</a>
+                    </div>
+                </div>
+                <div class="class-card" id="kelas-mpasi">
+                    <div class="class-image">
+                        <img src="images/mpasi.png" alt="Kelas MPASI">
+                    </div>
+                    <div class="class-content">
+                        <h3>Kelas MPASI</h3>
+                        <p>Workshop membuat makanan pendamping ASI</p>
+                        <div class="class-price">Rp 250.000</div>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="class-btn">Daftar</a>
+                    </div>
+                </div>
+                <div class="class-card" id="prenatal-yoga">
+                    <div class="class-image">
+                        <img src="images/bumilyoga.png" alt="Prenatal Yoga">
+                    </div>
+                    <div class="class-content">
+                        <h3>Prenatal Yoga</h3>
+                        <p>Yoga khusus ibu hamil untuk relaksasi dan persiapan persalinan</p>
+                        <div class="class-price">Rp 180.000</div>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="class-btn">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Pemilihan Domisili -->
+    <div id="regionModal" class="region-modal">
+        <div class="region-modal-content">
+            <div class="region-header">
+                <h2>Pilih Wilayah Anda</h2>
+                <p>Harga layanan kami disesuaikan dengan wilayah Anda</p>
+            </div>
+            <div class="region-options">
+                <div class="region-card" data-region="jakarta-tangerang">
+                    <div class="region-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Jakarta - Tangerang</h3>
+                    <p>Layanan untuk wilayah Jakarta dan Tangerang</p>
+                </div>
+                <div class="region-card" data-region="surabaya-malang">
+                    <div class="region-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Surabaya - Malang</h3>
+                    <p>Layanan untuk wilayah Surabaya dan Malang</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Paket Pendampingan Persalinan (Premium) -->
+    <section class="premium-packages" id="premium-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Paket Pendampingan Persalinan</h2>
+                <p>Pendampingan lengkap dari kehamilan hingga pasca persalinan</p>
+                <button class="change-region-btn" id="changeRegionBtn">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <span id="currentRegion">Pilih Wilayah</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            
+            <div class="packages-grid">
+                <!-- Ready Birth Support -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Ready Birth Support</h3>
+                        <div class="package-badge free-modul">FREE 2 MODUL</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount" data-price="readyBirth" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x Pendampingan kehamilan (120 menit)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x Kelas mom & baby newborn</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x Kelas persiapan menyusui</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x12 jam persalinan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x Postpartum</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Konsultasi Online</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Birth plan personal</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="package-btn">Pilih Paket</a>
+                </div>
+
+                <!-- Comfort Support -->
+                <div class="package-card popular">
+                    <div class="package-badge-top">PALING POPULER</div>
+                    <div class="package-header">
+                        <h3>Comfort Support</h3>
+                        <div class="package-badge free-modul">FREE 5 MODUL</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount" data-price="comfortSupport" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>3x Pendampingan kehamilan (120 menit)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>2x Kelas mom & baby newborn</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>2x Kelas persiapan menyusui</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x18 jam persalinan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x Postpartum</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Konsultasi Online</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Birth plan personal</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Jadwal persiapan persalinan mandiri</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="package-btn">Pilih Paket</a>
+                </div>
+
+                <!-- Holistic Support -->
+                <div class="package-card best-value">
+                    <div class="package-badge-top best">BEST VALUE</div>
+                    <div class="package-header">
+                        <h3>Holistic Support</h3>
+                        <div class="package-badge free-modul">FREE 7 MODUL</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount" data-price="holisticSupport" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</span>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>6x Pendampingan kehamilan (120 menit)</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>3x Kelas mom & baby newborn</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>3x Kelas persiapan menyusui</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>1x18 jam persalinan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>3x Postpartum</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Konsultasi Online</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Birth plan personal</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Jadwal persiapan persalinan mandiri</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Dukungan emosional</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.link/q0zct5" target="_blank" class="package-btn">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Newborn Care Packages -->
+    <section class="newborn-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Paket Perawatan Bayi Baru Lahir</h2>
+                <p>Perawatan profesional untuk bayi dan ibu pasca melahirkan</p>
+            </div>
+            
+            <div class="pricing-tabs">
+                <button class="tab-btn active" data-tab="newborn-only">Newborn Care</button>
+                <button class="tab-btn" data-tab="newborn-mom">Newborn & Mom</button>
+            </div>
+
+            <!-- Newborn Care Only -->
+            <div class="tab-content active" id="newborn-only">
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <h3>Insidentil</h3>
+                        <div class="pricing-amount" data-price-newborn="insidentil" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        <p class="pricing-duration">2-3 jam/hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Memjemur bayi</li>
+                            <li><i class="fas fa-check"></i> Memandikan bayi</li>
+                            <li><i class="fas fa-check"></i> Oral care</li>
+                            <li><i class="fas fa-check"></i> Perawatan tali pusat</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 1x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>3 Hari</h3>
+                        <div class="pricing-amount" data-price-newborn="hari3" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        <p class="pricing-duration">Perawatan 3 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 2x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card recommended">
+                        <div class="recommended-badge">REKOMENDASI</div>
+                        <h3>7 Hari</h3>
+                        <div class="pricing-amount" data-price-newborn="hari7" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">Perawatan 7 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 5x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>14+1 Hari</h3>
+                        <div class="pricing-amount" data-price-newborn="hari14" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">Perawatan 15 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 10x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>30 Hari</h3>
+                        <div class="pricing-amount" data-price-newborn="hari30" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">Perawatan 1 bulan</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 22x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newborn & Mom Package -->
+            <div class="tab-content" id="newborn-mom">
+                <div class="pricing-table">
+                    <div class="pricing-card">
+                        <h3>Insidentil</h3>
+                        <div class="pricing-amount" data-price-mom="insidentil" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        <p class="pricing-duration">1 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Perawatan bayi</li>
+                            <li><i class="fas fa-check"></i> Oral care</li>
+                            <li><i class="fas fa-check"></i> Perawatan tali pusat</li>
+                            <li><i class="fas fa-check"></i> Pijat laktasi 1x</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 1x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Bronze</h3>
+                        <div class="pricing-amount" data-price-mom="bronze" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">3 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat laktasi 2x</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 2x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Silver</h3>
+                        <div class="pricing-amount" data-price-mom="silver" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">7 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat laktasi 3x</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 4x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card recommended">
+                        <div class="recommended-badge">POPULER</div>
+                        <h3>Gold</h3>
+                        <div class="pricing-amount" data-price-mom="gold" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">14+1 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat laktasi 7x</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 8x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+
+                    <div class="pricing-card best-value">
+                        <div class="recommended-badge best">BEST VALUE</div>
+                        <h3>Platinum</h3>
+                        <div class="pricing-amount" data-price-mom="platinum" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0.000</div>
+                        <p class="pricing-duration">30 hari</p>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Semua layanan insidentil</li>
+                            <li><i class="fas fa-check"></i> Pijat laktasi 15x</li>
+                            <li><i class="fas fa-check"></i> Pijat bayi 15x</li>
+                        </ul>
+                        <a href="https://wa.link/q0zct5" target="_blank" class="pricing-btn">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Mom Care & Baby Treatment -->
+    <section class="services-pricing" id="konsultasi-gizi">
+        <div class="container">
+            <div class="section-header">
+                <h2>Layanan Mom Care & Baby Treatment</h2>
+                <p>Perawatan khusus untuk ibu dan bayi</p>
+            </div>
+
+            <div class="services-grid-pricing">
+                <!-- Mom Care -->
+                <div class="service-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-heart"></i> Mom Care
+                    </h3>
+                    <div class="service-items">
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Yoga Hamil</h4>
+                                <p>60 menit - Teknik pernapasan, relaksasi</p>
+                            </div>
+                            <div class="service-price" data-price-mom-care="yogaHamil" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Yoga Couple</h4>
+                                <p>60 menit - Yoga bersama pasangan</p>
+                            </div>
+                            <div class="service-price" data-price-mom-care="yogaCouple" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Pijat Payudara</h4>
+                                <p>40 menit - Free konsultasi menyusui</p>
+                            </div>
+                            <div class="service-price" data-price-mom-care="pijatPayudara" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Pijat Oksitosin</h4>
+                                <p>40 menit - Free konsultasi menyusui</p>
+                            </div>
+                            <div class="service-price" data-price-mom-care="pijatOksitosin" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Pijat Laktasi</h4>
+                                <p>60 menit - Free konsultasi & posisi menyusui</p>
+                            </div>
+                            <div class="service-price" data-price-mom-care="pijatLaktasi" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baby Treatment -->
+                <div class="service-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-baby"></i> Baby Treatment
+                    </h3>
+                    <div class="service-items">
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Baby Massage (30 menit)</h4>
+                                <p>Free pemeriksaan, pijat seluruh tubuh</p>
+                            </div>
+                            <div class="service-price" data-price-baby="massage30" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Baby Massage (45 menit)</h4>
+                                <p>Free pemeriksaan, pijat seluruh tubuh</p>
+                            </div>
+                            <div class="service-price" data-price-baby="massage45" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Baby Massage + Scrub</h4>
+                                <p>45 menit - Pijat + scrub seluruh tubuh</p>
+                            </div>
+                            <div class="service-price" data-price-baby="massageScrub" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Baby Massage + Gym</h4>
+                                <p>35 menit - Pijat + 10 menit baby gym</p>
+                            </div>
+                            <div class="service-price" data-price-baby="massageGym" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                        <div class="service-item-pricing">
+                            <div class="service-info">
+                                <h4>Cukur / Bath / Potong Kuku / Scrub</h4>
+                                <p>Free Oral Care</p>
+                            </div>
+                            <div class="service-price" data-price-baby="cukurBath" style="opacity: 0.5; color: #ccc; font-style: italic;">Rp 0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <p>Semua layanan dilakukan oleh bidan profesional bersertifikat</p>
+                <a href="https://wa.link/q0zct5" target="_blank" class="cta-btn">
+                    <i class="fab fa-whatsapp"></i> Konsultasi & Booking
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Ibu Bahagia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Tenaga Ahli</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Emergency Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimoni Ibu Bahagia</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Pelayanan di Mediz.id sangat memuaskan. Tim bidan dan dokternya sangat profesional dan ramah. Senam hamilnya juga sangat membantu persiapan persalinan saya."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial1.jpeg" alt="Ibu Sarah" onerror="this.src='images/logo.jpg'">
+                            <div>
+                                <strong>Ibu Sarah Putri</strong>
+                                <span>Ibu dari Kenzo (2 tahun)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Baby spa di sini benar-benar amazing! Bayi saya jadi lebih tenang dan tidurnya lebih nyenyak. Fasilitasnya juga sangat bersih dan modern."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial1.jpeg" alt="Ibu Maya" onerror="this.src='images/logo.jpg'">
+                            <div>
+                                <strong>Ibu Maya Sari</strong>
+                                <span>Ibu dari Alya (8 bulan)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Kelas MPASI-nya sangat informatif dan praktis. Sekarang saya lebih percaya diri dalam memberikan makanan sehat untuk si kecil."</p>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial3.jpeg" alt="Ibu Rina" onerror="this.src='images/logo.jpg'">
+                            <div>
+                                <strong>Ibu Rina Dewi</strong>
+                                <span>Ibu dari Farel (1 tahun)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="blog" style="display: none;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blog & Artikel Terbaru</h2>
+                <a href="#" class="view-all">Lihat Semua Artikel</a>
+            </div>
+            <div class="news-grid" id="informasi">
+                <article class="news-card featured" id="tips-parenting">
+                    <img src="images/hero-mother-baby.jpg" alt="Tips Kehamilan" onerror="this.style.display='none'">
+                    <div class="news-content">
+                        <span class="news-category">Tips Kehamilan</span>
+                        <h3>10 Nutrisi Penting untuk Ibu Hamil Trimester Pertama</h3>
+                        <p>Panduan lengkap nutrisi yang dibutuhkan ibu hamil untuk mendukung perkembangan janin yang optimal...</p>
+                        <div class="news-meta">
+                            <span class="news-date">2 Februari 2026</span>
+                            <span class="news-author">dr. Sari Pediatri</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card" id="panduan-kehamilan">
+                    <img src="images/hero-mother-baby.jpg" alt="Perawatan Bayi" onerror="this.style.display='none'">
+                    <div class="news-content">
+                        <span class="news-category">Perawatan Bayi</span>
+                        <h3>Cara Memandikan Bayi Baru Lahir yang Aman</h3>
+                        <div class="news-meta">
+                            <span class="news-date">1 Februari 2026</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card" id="webinar">
+                    <img src="images/mpasi.png" alt="MPASI" onerror="this.style.display='none'">
+                    <div class="news-content">
+                        <span class="news-category">MPASI</span>
+                        <h3>Resep MPASI 6 Bulan yang Bergizi dan Lezat</h3>
+                        <div class="news-meta">
+                            <span class="news-date">31 Januari 2026</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="kontak">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" id="tentang">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="Mediz.id">
+                    </div>
+                    <p>Pusat kesehatan ibu dan bayi terpercaya dengan layanan komprehensif dan tim ahli berpengalaman.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Konsultasi Kehamilan</a></li>
+                        <li><a href="#">Perawatan Pasca Melahirkan</a></li>
+                        <li><a href="#">Pijat Bayi & Ibu</a></li>
+                        <li><a href="#">Baby Spa & Treatment</a></li>
+                        <li><a href="#">Konsultasi Gizi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kelas & Program</h4>
+                    <ul>
+                        <li><a href="#">Senam Hamil</a></li>
+                        <li><a href="#">Kelas Menyusui</a></li>
+                        <li><a href="#">Kelas MPASI</a></li>
+                        <li><a href="#">Prenatal Yoga</a></li>
+                        <li><a href="#">Webinar Series</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak & Lokasi</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> 0800-1-IBU-BAYI</p>
+                        <p><i class="fas fa-whatsapp"></i> +62 813-2888-2429</p>
+                        <p><i class="fas fa-envelope"></i> info@mediz.id</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Kesehatan No. 123, Jakarta Selatan</p>
+                        <p><i class="fas fa-clock"></i> Senin-Minggu: 08:00-20:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mediz.id. Semua hak dilindungi undang-undang.</p>
+                <div class="footer-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pricing-script.js"></script>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.link/q0zct5" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
