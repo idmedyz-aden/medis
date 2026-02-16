@@ -1,4 +1,4 @@
-# Mediz.id - Website Kesehatan Ibu & Bayi
+# Medis.id - Website Kesehatan Ibu & Bayi
 
 Website profesional untuk layanan homecare ibu dan bayi dengan sistem pricing dinamis per wilayah.
 
@@ -39,7 +39,7 @@ Website profesional untuk layanan homecare ibu dan bayi dengan sistem pricing di
 
 ### Assets
 - `images/` - Folder untuk semua gambar
-  - `logo.jpg` - Logo Mediz.id
+  - `logo.jpg` - Logo Medis.id
   - `hero-mother-baby.jpg` - Hero image
   - `senbumil.png`, `busui.jpg`, `mpasi.png`, `bumilyoga.png` - Class images
   - `instruktor1.jpeg` - Instructor photo

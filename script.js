@@ -752,7 +752,7 @@ const createBookingSystem = () => {
                             <p>Silakan transfer ke rekening berikut:</p>
                             <div class="bank-info">
                                 <strong>Bank BCA: 1234567890</strong><br>
-                                <strong>a.n. Mediz.id</strong>
+                                <strong>a.n. Medis.id</strong>
                             </div>
                             <p><small>Konfirmasi pembayaran akan dikirim via WhatsApp</small></p>
                         </div>

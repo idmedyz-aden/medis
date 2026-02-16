@@ -1,4 +1,4 @@
-# Timeline Implementasi Website Mediz.id
+# Timeline Implementasi Website Medis.id
 
 ## 📅 Fase 1: Persiapan & Setup (Minggu 1-2)
 
@@ -14,13 +14,13 @@
 - [ ] Siapkan profil tim dokter dan bidan
 
 ### Minggu 2: Setup Teknis
-- [ ] Setup hosting dan domain mediz.id
+- [ ] Setup hosting dan domain medis.id
 - [x] Upload semua file website (HTML, CSS, JS)
 - [x] Upload semua gambar dan aset
 - [x] Test website di berbagai browser
 - [x] Test responsivitas di mobile dan tablet
 - [ ] Setup SSL certificate
-- [ ] Konfigurasi email untuk info@mediz.id
+- [ ] Konfigurasi email untuk info@medis.id
 
 ## 📅 Fase 2: Konten & Fungsionalitas (Minggu 3-4)
 
