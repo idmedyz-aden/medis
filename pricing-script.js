@@ -45,24 +45,6 @@ function hideAllPrices() {
         element.style.opacity = '0.5';
     });
 }
-    
-    if (!selectedRegion) {
-        // First time visit, show modal
-        setTimeout(() => {
-            showRegionModal();
-        }, 1000);
-    } else {
-        // Update all prices based on saved region
-        updateAllPrices(selectedRegion);
-        updateRegionDisplay(selectedRegion);
-    }
-    
-    // Setup region card click handlers
-    setupRegionCards();
-    
-    // Setup tab switching
-    setupTabs();
-});
 
 // Show region modal
 function showRegionModal() {
